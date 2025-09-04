@@ -1,0 +1,28 @@
+nav a {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.cambridge-btn {
+    display: inline-block;
+    background-color: #1d2a57; /* колір сторінки Кембріджського словника */
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.cambridge-btn img {
+    display: block;
+    max-height: 40px; /* щоб не була занадто велика */
+}
+
+.exercise-btn {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    background-color: #06be3a; /* колір сторінки Кембріджського словника */
+    padding: 10px;
+    border-radius: 8px;  
+}
