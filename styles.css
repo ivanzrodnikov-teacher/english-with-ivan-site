@@ -6,6 +6,59 @@ nav a {
     border-radius: 4px;
 }
 
+/* Базові стилі меню */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  padding: 10px;
+}
+
+.navbar .logo {
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+}
+
+.hamburger {
+  display: none; /* приховано на великих екранах */
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Адаптивність */
+@media (max-width: 600px) {
+  .nav-links {
+    display: none; /* ховаємо меню за замовчуванням */
+    flex-direction: column;
+    background: #333;
+    width: 100%;
+  }
+
+  .nav-links.show {
+    display: flex; /* показуємо коли активне */
+  }
+
+  .hamburger {
+    display: block; /* показуємо на малих екранах */
+  }
+}
+
+
 .cambridge-btn {
     display: inline-block;
     background-color: #1d2a57; /* колір сторінки Кембріджського словника */
