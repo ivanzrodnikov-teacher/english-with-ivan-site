@@ -1,29 +1,16 @@
 <nav class="navbar">
-    <div class="logo">English with Ivan</div>
-    <button class="hamburger" aria-label="Меню">&#9776;</button>
-    <div class="nav-links">
-        <a href="index.html" class="nav-btn">
-            Головна
-        </a>
-        <a href="schedule.html" class="nav-btn">
-            Розклад
-        </a>
-        <a href="student_resources.html" class="nav-btn">
-            Корисні ресурси
-        </a>
-        <a href="exercises.html" class="nav-btn">
-            Вправи
-        </a>       
-    </div>
+  <div class="logo">English with Ivan</div>
+
+  <!-- прихований чекбокс -->
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <!-- кнопка гамбургера -->
+  <label for="menu-toggle" class="hamburger">&#9776;</label>
+
+  <!-- меню -->
+  <div class="nav-links">
+    <a href="index.html">Головна</a>
+    <a href="schedule.html">Розклад</a>
+    <a href="student_resources.html">Корисні ресурси</a>
+    <a href="exercises.html">Вправи</a>
+  </div>
 </nav>
-
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const hamburger = document.querySelector('.hamburger');
-    const navLinks = document.querySelector('.nav-links');
-
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('show');
-    });
-  });
-</script>

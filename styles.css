@@ -1,3 +1,10 @@
+nav {
+  display: flex;
+  flex-wrap: wrap; /* дозволяє кнопкам переноситися */
+  gap: 5px; /* відстань між кнопками */
+  justify-content: center; /* центрування меню */
+}
+
 nav a {
     text-decoration: none;
     color: white;
@@ -6,7 +13,7 @@ nav a {
     border-radius: 4px;
 }
 
-/* Базові стилі меню */
+/* Базові стилі */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -15,7 +22,7 @@ nav a {
   padding: 10px;
 }
 
-.navbar .logo {
+.logo {
   color: white;
   font-weight: bold;
 }
@@ -32,32 +39,33 @@ nav a {
 }
 
 .hamburger {
-  display: none; /* приховано на великих екранах */
+  display: none;
   font-size: 24px;
-  background: none;
-  border: none;
   color: white;
   cursor: pointer;
+}
+
+.menu-toggle {
+  display: none; /* приховуємо чекбокс */
 }
 
 /* Адаптивність */
 @media (max-width: 600px) {
   .nav-links {
-    display: none; /* ховаємо меню за замовчуванням */
+    display: none;
     flex-direction: column;
     background: #333;
     width: 100%;
   }
 
-  .nav-links.show {
-    display: flex; /* показуємо коли активне */
+  .menu-toggle:checked + .hamburger + .nav-links {
+    display: flex; /* показуємо, коли чекбокс увімкнено */
   }
 
   .hamburger {
-    display: block; /* показуємо на малих екранах */
+    display: block;
   }
 }
-
 
 .cambridge-btn {
     display: inline-block;
