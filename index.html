@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English with Ivan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div id="nav"></div>
+    <script>
+        fetch('menu.html')
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById('nav').innerHTML = data;
+        });
+    </script>
+</header>
+<body>
+    <h1 style="color: blue;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            "
+    >
+        English with Ivan
+    </h1>
+    <p>
+        Welcome to "English with Ivan". Here we will learn English together the way learning is supposed to be - fun and interesting.
+    </p>
+</body>
+</html>
